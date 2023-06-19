@@ -1,0 +1,53 @@
+
+.calci{
+  
+
+ 
+ max-width: 350px;
+ background-image: linear-gradient(rgb(232, 162, 162),rgb(148, 148, 216));
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    max-width: 200vh;
+    padding: 50px;
+    padding-top: 200px;
+ 
+}
+  
+
+
+
+
+
+.number{
+  border-radius: 8px;
+  background-color: antiquewhite;
+  max-width: 250px;
+}
+
+.number1{
+  background-color: rgb(185, 231, 216);
+  border-radius: 8px;
+  max-width: 250px;
+}
+
+
+
+  .keypad {
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    max-width: 250px;
+    
+    
+  }
+  .point{
+    display: grid;
+    height: 40px;
+    max-width: 250px;
+  }
+
+  
