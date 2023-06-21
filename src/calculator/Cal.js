@@ -6,7 +6,7 @@ function Cal(){
    let [answer,setAnswer]=useState('');
 
    let handleClick=(p)=>{
-    if(answer==="Invalid expression")
+    if(answer==="Invalid Expression")
     {
       setAnswer(p.target.name)
     }
@@ -22,19 +22,22 @@ function Cal(){
 
 
    const calculate=()=>{
+
     try{
-    setAnswer(eval(answer).toString)
+      setAnswer(eval(answer).toString())
+
     }
     catch(err){
-      setAnswer('Invalid expression')
+      setAnswer('Invalid Expression')
     }
+
     
    }
     
    return(
     <div className=' container calci '>
       <div>
-      <input type='text'  className='point text-dark border border-dark rounded  m-auto w-100' value={answer}  readOnly/>
+      <input type='text'  className='point text-dark border border-dark rounded  m-auto w-100' value={answer}  readOnly={true}/>
       <div className='keypad '>
         <button name='1' onClick={handleClick} className='number'>1</button>
         <button name='2' onClick={handleClick} className='number'>2</button>
